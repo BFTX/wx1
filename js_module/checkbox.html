@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>checkbox实现单选</title>
+<script src="../public/js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+		<form method='get' action=''>
+			<input type="radio" name="has" value='Y' />是
+			<input type="radio" name="has" value='N' />否
+			<input type="checkbox"      name="chkbox1"    value="<?php echo time();?>" />复选框1
+			<input type="checkbox"      name="chkbox2"    value="<?php echo time();?>" />复选框2
+
+			数字：<input type="text" name="what" value="" />
+			<input type="submit" value="提交" />
+			<select>
+				<option value='ss'> 请选择</option>
+				<option  > 345</option>
+				<option  > 789</option>
+			</select>
+		</form>
+		<ul class='h_ul store'>
+			<span class='src'></span>
+			<span class='src'></span>
+			<span class='src'></span>
+			<span class='src'></span>
+		</ul>
+	
+	
+</body>
+</html>
+<script>
+$(function(){
+	/**
+	 * radio只需要相同的name,即可实现单选
+	 */
+	 
+	/**
+	 * 实现多个checkbox 只选中一个 
+	 */
+	var form=$('form');
+	form.on('click','[name^="chkbox"]',function(){
+		var other_prop=form.find('[name^="chkbox"]').not($(this)).prop('checked');
+		if((other_prop?other_prop:false) && $(this).prop('checked')){
+			form.find('[name^="chkbox"]').not($(this)).prop('checked',false);
+		}
+	})
+	
+})
+
+</script>
