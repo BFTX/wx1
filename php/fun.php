@@ -58,8 +58,8 @@
 /*
  * php 函数 join 合并数组
  */
- echo join(',',array('wx','liliy'));wxliliy
- echo join(array('a','wx'));awx
+ echo join(',',array('wx','liliy'));//wxliliy
+ echo join(array('a','wx'));//awx
  
 /**
  * 将一维或多维数组转化为字符串
