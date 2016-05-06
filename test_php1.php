@@ -49,6 +49,9 @@ b;
      * 遍历文件夹下的所有文件及子文件
      */
     public function get_files($file_path){
+        if(!is_readable($file_path)){
+            die("文件$file_path不可读！！！");
+        }
         $files=array();
         if(is_dir($file_path)){
             $handler=opendir($file_path);
