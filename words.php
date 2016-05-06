@@ -14,7 +14,8 @@ Had I not seen the sun, I could have borne the shade.
 Real dream is the other shore of reality.
 真正的梦就是现实的彼岸。
     
-    
+Progress is not created by contented people.
+进步不是由满足的人所创造。    
     
     
     
