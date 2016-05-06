@@ -51,13 +51,14 @@ b;
     public function get_files($file_path){
         $files=array();
         if(is_dir($file_path)){
-            $handler=fopen($file_path,'r');
-            while (false!==($file=fread($handler))){
+            $handler=opendir($file_path);
+            while (false!==($file=readdir($handler))){
                 if($file!='.' && $file!='..'){
                     $tmp_file_path=$file_path.DIRECTORY_SEPARATOR.$file;
                     $files[]=$this->get_files($tmp_file_path);
                 }
             }
+            closedir($handler);
             return $files;
         }else{
             return $file_path;
@@ -67,4 +68,4 @@ b;
     
 }
 $test=new Test();
-print_r($test->get_files('D:\g\wamp\www\wx1'));
+//print_r($test->get_files('f:application'));
