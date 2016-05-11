@@ -17,7 +17,14 @@ Real dream is the other shore of reality.
 Progress is not created by contented people.
 进步不是由满足的人所创造。    
     
+Labour is often the father of pleasure.
+勤劳常为快乐之源。
     
+Every man dies, not every man really lives.
+任何人都将会死去，然而并不是每个人都真真正正的活过。    
+    
+Courage is grace under pressure.
+勇气就是压力下的优雅。    
     
     
     
