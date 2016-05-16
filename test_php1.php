@@ -67,8 +67,37 @@ b;
             return $file_path;
         }
     }
-    
-    
+
+
+	/**
+	 * curl函数
+	 */    
+    public function curl($url){
+	   
+	    
+	    
+    }  
 }
-$test=new Test();
-//print_r($test->get_files('f:application'));
+//$a=2;
+//eval("if(isset($a)){$a=3;}");//双引号报错，因为解析了变量; Parse error: syntax error, unexpected '=', expecti
+eval("if(isset(\$a)){\$a=3;}else{\$a=1;}");
+echo $a;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

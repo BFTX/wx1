@@ -29,9 +29,11 @@ Courage is grace under pressure.
 By plucking her petals you do not gather the beauty of the flower.
 采到了花瓣，却并不代表拥有了花的美丽。    
     
+He is wise that knows when he's well enough.
+知足的人是聪明的人。 
     
-    
-    
+Knowledge is one thing, but faith is another.
+知识是一回事，而信仰是另一回事。    
     
     
     
