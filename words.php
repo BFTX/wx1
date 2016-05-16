@@ -28,7 +28,9 @@ Courage is grace under pressure.
     
 By plucking her petals you do not gather the beauty of the flower.
 采到了花瓣，却并不代表拥有了花的美丽。    
-    
+
+To choose time is to save time .
+合理安排时间就是节约时间。   
     
     
     
