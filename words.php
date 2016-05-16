@@ -26,8 +26,8 @@ Every man dies, not every man really lives.
 Courage is grace under pressure.
 勇气就是压力下的优雅。    
     
-    
-    
+By plucking her petals you do not gather the beauty of the flower.
+采到了花瓣，却并不代表拥有了花的美丽。    
     
     
     
