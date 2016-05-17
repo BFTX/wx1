@@ -30,7 +30,13 @@ By plucking her petals you do not gather the beauty of the flower.
 采到了花瓣，却并不代表拥有了花的美丽。    
 
 To choose time is to save time .
-合理安排时间就是节约时间。   
+合理安排时间就是节约时间。 
+
+Progress is not created by contented people.
+进步不是由满足的人所创造。
+
+Love is the one thing that transcends time and space.
+爱能超越时空。  
     
     
     
