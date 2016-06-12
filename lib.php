@@ -1,8 +1,4 @@
-<?php
-/**
- * php curl函数测试 
- * 
- */
+ <?php 
  /**
   * 获取指定url返回的内容
   * @param string $url
@@ -43,15 +39,16 @@ function wx_curl($url){
 /**
  * 下载图片文件
  * @param string $url
+ * @param string $dir 
  * @return boolean 
  */
-function wx_download($url){
+function wx_download($url,$dir=''){
     
    if( $res=wx_curl($url)){
        $filename=substr(strrchr($url,'/'),1);//获取文件名
-       if(file_exists($filename))return true;//文件存在
+       if(file_exists($dir.$filename))return true;//文件存在
        
-       $handle=fopen($filename,'ab');//创建文件资源
+       $handle=fopen($dir.$filename,'ab');//创建文件资源
        $status=fwrite($handle,$res);//写入资源 
        fclose($handle);
        
@@ -63,10 +60,3 @@ function wx_download($url){
    }
    return false;
 }
-//$url='https://cbu01.alicdn.com/img/ibank/2016/885/892/3118298588_1829132622.jpg_460x460.jpg';
-//var_dump(wx_download($url));
-
-
-
-
-
