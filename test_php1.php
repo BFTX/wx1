@@ -95,6 +95,73 @@ class callback{
         echo $a,' ',$b;
     }
 }
+
+echo md5(12332100);
+exit;
+//取整
+echo intval('3.2');
+exit;
+$str=1234567;
+$count=7;
+echo "/^\d\{$count\}$/",'<br/>';
+echo '/^\d{$count}$/';
+var_dump(preg_match("/^\d\{$count\}$/",$str));
+exit;
+
+
+$a=1;
+$b=2;
+$c=3;
+echo $a>$b?$a>$c?$a:$c:$b>$c?$b:$c;
+echo $a>$b?$b>$c?$c:$b:$a>$c?$c:$a;
+exit;
+$str='沁园春·雪
+
+作者：毛泽东【现代】赏析
+
+北国风光，千里冰封，万里雪飘。
+
+望长城内外，惟余莽莽；大河上下，顿失滔滔。
+
+山舞银蛇，原驰蜡象，欲与天公试比高。
+
+须晴日，看红装素裹，分外妖娆。
+
+江山如此多娇，引无数英雄竞折腰。
+
+惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。
+
+一代天骄，成吉思汗，只识弯弓射大雕。
+
+俱往矣，数风流人物，还看今朝。';
+echo <<<EOL
+    <script>
+        var str='$str';
+        console.log(str.replace(/\n/g,'<br/>'));
+    
+    </script>
+    
+EOL;
+exit;
+
+
+echo str_replace('，','',$str);
+exit;
+
+echo strip_tags('<img />sldfjoej','<img>');
+exit;
+
+
+echo strlen(123);
+exit;
+
+
+$arr=array('id'=>'12','name'=>'wx');
+$b=array();
+print_r(array_merge($arr,$b));
+exit;
+
+
 $a=array(0=>1,1=>2);
 $b=array(0=>2,1=>3);
 print_r($a+$b);
