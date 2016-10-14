@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+   <script src="../public/js/jquery-1.8.3.min.js"></script>
+   <script src="jquery.ajaxupload.js"></script>
+    <script type="text/javascript">
+        function uploadImage() {
+        //判断是否有选择上传文件
+            var imgPath = $("#uploadFile").val();
+            if (imgPath == "") {
+                alert("请选择上传图片！");
+                return;
+            }
+            alert(123); 
+            $.ajax({
+                type: "POST",
+                url: "http://wx.com/wx1/index.php ",
+                data: { imgPath: $("#uploadFile").val() },
+                success: function(data) {
+                 
+                    alert(data); 
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    alert("上传失败，请检查网络后重试");
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<form  enctype="multipart/form-data" method="post">
+<input type="file" id="uploadFile" runat="server" />
+<input type="button" id="btnUpload" value="确定" onclick="uploadImage()" />
+<div id="imgDiv">
+</div>
+</form>
+</body>
+</html>

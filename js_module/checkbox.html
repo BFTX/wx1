@@ -21,18 +21,24 @@
 				<option  > 789</option>
 			</select>
 		</form>
-		<ul class='h_ul store'>
-			<span class='src'></span>
-			<span class='src'></span>
-			<span class='src'></span>
-			<span class='src'></span>
+		<ul class='h_ul store' onclick="alert('out');" >
+			<span class='src' onclick="alert('in');window.location.href='./test1.html';" > <a >span1</a></span>
+			<span class='src'>span2</span>
+			<span class='src'>span3</span>
+			<span class='src'>span4</span>
 		</ul>
 	
 	
 </body>
 </html>
 <script>
+var arr=['wx','lily'];
+console.log(arr.indexOf('wx'));
+function test1(a,b,c,d){
+	alert(a);
+}
 $(function(){
+	test1(1);
 	/**
 	 * radio只需要相同的name,即可实现单选
 	 */
